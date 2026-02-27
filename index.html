@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SECTION: Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sophie Bates Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SECTION: Interactive Header -->
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <div class="logo-lockup">
+          <span class="logo-mark">//</span>
+          <div class="logo-text">
+            <span class="logo-name">Sophie Bates</span>
+            <span class="logo-role">UX/UI Design × Software Development</span>
+          </div>
+        </div>
+        <button class="header-toggle" aria-label="Toggle header mode">
+          Download CV
+        </button>
+      </div>
+      <div class="header-bar" aria-hidden="true"></div>
+    </header>
+
+    <!-- SECTION: Global Navigation -->
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><button class="nav-link" data-scroll-target="#projects">Projects</button></li>
+        <li><a class="nav-link" href="experience.html">Experience</a></li>
+        <li><a class="nav-link" href="education.html">Education</a></li>
+        <li><button class="nav-link" data-scroll-target="#contact">Contact</button></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- SECTION: Intro -->
+      <section class="intro" aria-labelledby="intro-heading">
+        <div class="intro-inner">
+          <h1 id="intro-heading">Hi, I'm Sophie!</h1>
+          <p class="intro-body">
+            I design and create a variety of different software with a user-focused approach. Combining knowledge of human behavior with design principles and coding knowledge. 
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION: Projects -->
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="section-header">
+          <h2 id="projects-heading">Projects</h2>
+          <p class="section-subtitle">Filter and explore projects.</p>
+        </div>
+
+        <!-- Project Tag Filters -->
+        <div class="filter-bar" aria-label="Project filters">
+          <!-- Type filters -->
+          <div class="filter-group">
+            <span class="filter-label">Type</span>
+            <button class="chip is-active" data-filter-type="type" data-filter-value="all">All</button>
+            <button class="chip" data-filter-type="type" data-filter-value="uxui">UX/UI</button>
+            <button class="chip" data-filter-type="type" data-filter-value="frontend">Frontend</button>
+            <button class="chip" data-filter-type="type" data-filter-value="fullstack">Full-stack</button>
+            <button class="chip" data-filter-type="type" data-filter-value="backend">Backend</button>
+            <button class="chip" data-filter-type="type" data-filter-value="design">Design</button>
+            <button class="chip" data-filter-type="type" data-filter-value="research">Research</button>
+          </div>
+
+          <!-- AI filters -->
+          <div class="filter-group">
+            <span class="filter-label">AI Used</span>
+            <button class="chip is-active" data-filter-type="ai" data-filter-value="all">Any</button>
+            <button class="chip" data-filter-type="ai" data-filter-value="ai-used">AI Used</button>
+            <button class="chip" data-filter-type="ai" data-filter-value="ai-not-used">AI Not Used</button>
+          </div>
+
+          <!-- Software / Language filters -->
+          <div class="filter-group">
+            <span class="filter-label">Software / Language</span>
+            <button class="chip is-active" data-filter-type="tool" data-filter-value="all">Any</button>
+            <button class="chip" data-filter-type="tool" data-filter-value="python">Python</button>
+            <button class="chip" data-filter-type="tool" data-filter-value="html-css">HTML/CSS/JS</button>
+            <button class="chip" data-filter-type="tool" data-filter-value="figma">Figma</button>
+            <button class="chip" data-filter-type="tool" data-filter-value="microsoft-suite">Microsoft Suite</button>
+            <button class="chip" data-filter-type="tool" data-filter-value="canva">Canva</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <article
+            class="project-card"
+            data-type="uxui fullstack design"
+            data-ai="ai-used"
+            data-tools="html-css"
+            aria-labelledby="proj1-title"
+          >
+            <div class="project-media">
+              <div class="project-image project-image-1" aria-hidden="true">
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-label">Electron App Project</span>
+              </div>
+              <h3 id="proj1-title" class="project-title">Water Reminders Desktop App</h3>
+              <p class="project-summary">
+                Electron app created based on template by nasha-wanich to provide notifications at set intervals to remind the user to drink water.
+              </p>
+              <ul class="project-tags">
+                <li>Desktop App,</li>
+                <li>Interaction design,</li>
+                <li>JavaScript,</li>
+                <li>HTML/CSS</li>
+              </ul>
+              <a class="btn project-btn" href="project_1.html">View full project</a>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article
+            class="project-card"
+            data-type="fullstack design uxui"
+            data-ai="ai-not-used"
+            data-tools="figma html-css"
+            aria-labelledby="proj2-title"
+          >
+            <div class="project-media">
+              <div class="project-image project-image-2" aria-hidden="true">
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-label">End-to-end</span>
+              </div>
+              <h3 id="proj2-title" class="project-title">Party RSVP Website</h3>
+              <p class="project-summary">
+                Creating a website for RSVPs to a party from wireframing to final product that includes multiple embeds and a customisable RSVP form. 
+              </p>
+              <ul class="project-tags">
+                <li>Figma,</li>
+                <li>Prototyping,</li>
+                <li>Wireframing,</li>
+                <li>HTML/CSS,</li>
+                <li>JavaScript</li>
+              </ul>
+              <a class="btn project-btn" href="project_2.html">View full project</a>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article
+            class="project-card"
+            data-type="fullstack design uxui"
+            data-ai="ai-not-used"
+            data-tools="canva python"
+            aria-labelledby="proj3-title"
+          >
+            <div class="project-media">
+              <div class="project-image project-image-3" aria-hidden="true"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-label">Python build</span>
+              </div>
+              <h3 id="proj3-title" class="project-title">Board Game Score Calculator</h3>
+              <p class="project-summary">
+                A board game score calculator that calculated players scores based on the game selected by asking for set values and calculates the order of player scores.
+              </p>
+              <ul class="project-tags">
+                <li>Calculator, </li>
+                <li>Python, </li>
+                <li>Canva, </li>
+                <li>User Interface</li>
+              </ul>
+              <a class="btn project-btn" href="project_3.html">View full project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION: Contact -->
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <div class="section-header">
+          <h2 id="contact-heading">Contact</h2>
+          <p class="section-subtitle">Get in touch with me.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send message</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- SECTION: Footer -->
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Sophie Bates Portfolio. UX/UI Design & Software Development.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
